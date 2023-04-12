@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: #000;
+}
+.container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    -webkit-box-reflect: below 2px linear-gradient (transparent, #0005);
+}
+.container .box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: linear-gradient(45deg,#00f376 10%, transparent 10%, transparent 50%, #00f376 50%, #00f376 60%, transparent 60%, transparent 60%, transparent 100%);
+    background-size: 40px 40px;
+    transform: rotate(calc(var(--i) * 90deg));
+    filter: hue-rotate(calc(var(--i) * 90deg));
+    animation: animate 0.5s linear infinite;
+}
+
+@media only screen and (max-width:1024px){
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        background-color: #000;
+    }
+    .container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        -webkit-box-reflect: below 2px linear-gradient (transparent, #0005);
+    }
+    .container .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: linear-gradient(45deg,#00f376 10%, transparent 10%, transparent 50%, #00f376 50%, #00f376 60%, transparent 60%, transparent 60%, transparent 100%);
+        background-size: 40px 40px;
+        transform: rotate(calc(var(--i) * 90deg));
+        filter: hue-rotate(calc(var(--i) * 90deg));
+        animation: animate 0.5s linear infinite;
+    }
+}
+@media only screen and (max-width:992px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        background-color: #000;
+    }
+    .container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        -webkit-box-reflect: below 2px linear-gradient (transparent, #0005);
+    }
+    .container .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: linear-gradient(45deg,#00f376 10%, transparent 10%, transparent 50%, #00f376 50%, #00f376 60%, transparent 60%, transparent 60%, transparent 100%);
+        background-size: 40px 40px;
+        transform: rotate(calc(var(--i) * 90deg));
+        filter: hue-rotate(calc(var(--i) * 90deg));
+        animation: animate 0.5s linear infinite;
+    }
+}
+@media only screen and (max-width:768px){
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        background-color: #000;
+    }
+    .container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        -webkit-box-reflect: below 2px linear-gradient (transparent, #0005);
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: linear-gradient(45deg,#00f376 10%, transparent 10%, transparent 50%, #00f376 50%, #00f376 60%, transparent 60%, transparent 60%, transparent 100%);
+        background-size: 40px 40px;
+        transform: rotate(calc(var(--i) * 90deg));
+        filter: hue-rotate(calc(var(--i) * 90deg));
+        animation: animate 0.5s linear infinite;
+    }
+}
+@media only screen and (max-width:576px){
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+
+        background-color: #000;
+    }
+    .container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        -webkit-box-reflect: below 2px linear-gradient (transparent, #0005);
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        background: linear-gradient(45deg,#00f376 10%, transparent 10%, transparent 50%, #00f376 50%, #00f376 60%, transparent 60%, transparent 60%, transparent 100%);
+        background-size: 40px 40px;
+        transform: rotate(calc(var(--i) * 90deg));
+        filter: hue-rotate(calc(var(--i) * 90deg));
+        animation: animate 0.5s linear infinite;
+    }
+}
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+
+    100%{
+        background-position: 40px;
+    }
+}
